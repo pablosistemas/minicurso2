@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Fri Jan 30 07:18:59 2015">
+  <application stringID="Map" timeStamp="Wed Feb  4 10:57:07 2015">
     <task stringID="MAP_PACK_REPORT">
       <section stringID="MAP_DESIGN_INFORMATION">
         <item stringID="MAP_PART" value="2vp50ff1152-7"/>
@@ -17,35 +17,35 @@
       <section stringID="MAP_DESIGN_SUMMARY">
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="1865"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="756236"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="5 mins 20 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="5 mins 18 secs "/>
+        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="1938"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="783100"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="7 mins 10 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="7 mins 10 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING"/>
       <section stringID="MAP_LOGIC_UTILIZATION">
-        <item dataType="int" stringID="MAP_NUM_SLICE_FF" value="11929"/>
+        <item dataType="int" stringID="MAP_NUM_SLICE_FF" value="12129"/>
         <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="0"/>
         <item dataType="int" stringID="MAP_NUM_SLICE" value="23616"/>
         <item dataType="int" stringID="MAP_FLOPS_PER_SLICE" value="2"/>
-        <item dataType="int" stringID="MAP_NUM_4_INPUT_LUT" value="15026"/>
-        <item dataType="int" stringID="MAP_NUM_LUT_RT" value="15026"/>
+        <item dataType="int" stringID="MAP_NUM_4_INPUT_LUT" value="15135"/>
+        <item dataType="int" stringID="MAP_NUM_LUT_RT" value="15135"/>
       </section>
       <section stringID="MAP_LOGIC_DISTRIBUTION">
-        <item dataType="int" stringID="MAP_AGG_SLICE" value="11654"/>
+        <item dataType="int" stringID="MAP_AGG_SLICE" value="12096"/>
         <item dataType="int" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_4_INPUT_LUT" value="15998"/>
-        <item dataType="int" stringID="MAP_NUM_LUT_RT" value="972"/>
+        <item dataType="int" stringID="MAP_NUM_4_INPUT_LUT" value="16104"/>
+        <item dataType="int" stringID="MAP_NUM_LUT_RT" value="969"/>
         <item dataType="int" stringID="MAP_NUM_DP_RAM" value="1688"/>
         <item dataType="int" stringID="MAP_NUM_RAM32" value="256"/>
         <item dataType="int" stringID="MAP_NUM_RAM16" value="160"/>
         <item dataType="int" stringID="MAP_NUM_ROM16" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_SHIFT" value="63"/>
+        <item dataType="int" stringID="MAP_NUM_SHIFT" value="62"/>
       </section>
       <section stringID="MAP_IOB_REPORTING">
         <item AVAILABLE="692" dataType="int" stringID="MAP_AGG_BONDED_IO" value="356"/>
         <item AVAILABLE="572" dataType="int" stringID="MAP_AGG_UNBONDED_IO" value="0"/>
-        <item AVAILABLE="0" dataType="int" stringID="MAP_NUM_IOB_FF" value="650"/>
+        <item AVAILABLE="0" dataType="int" stringID="MAP_NUM_IOB_FF" value="578"/>
         <item AVAILABLE="0" dataType="int" stringID="MAP_NUM_IOB_LATCH" value="0"/>
       </section>
       <section stringID="MAP_HARD_IP_REPORTING">
@@ -2418,396 +2418,360 @@
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
           <row stringID="row" value="406"/>
-          <row stringID="row" value="407"/>
-          <row stringID="row" value="408">
+          <row stringID="row" value="407">
             <item stringID="IOB_Name" value="sram1_data(1)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="409"/>
-          <row stringID="row" value="410"/>
-          <row stringID="row" value="411">
+          <row stringID="row" value="408"/>
+          <row stringID="row" value="409">
             <item stringID="IOB_Name" value="sram1_data(2)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="412"/>
-          <row stringID="row" value="413"/>
-          <row stringID="row" value="414">
+          <row stringID="row" value="410"/>
+          <row stringID="row" value="411">
             <item stringID="IOB_Name" value="sram1_data(3)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="415"/>
-          <row stringID="row" value="416"/>
-          <row stringID="row" value="417">
+          <row stringID="row" value="412"/>
+          <row stringID="row" value="413">
             <item stringID="IOB_Name" value="sram1_data(4)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="418"/>
-          <row stringID="row" value="419"/>
-          <row stringID="row" value="420">
+          <row stringID="row" value="414"/>
+          <row stringID="row" value="415">
             <item stringID="IOB_Name" value="sram1_data(5)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="421"/>
-          <row stringID="row" value="422"/>
-          <row stringID="row" value="423">
+          <row stringID="row" value="416"/>
+          <row stringID="row" value="417">
             <item stringID="IOB_Name" value="sram1_data(6)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="424"/>
-          <row stringID="row" value="425"/>
-          <row stringID="row" value="426">
+          <row stringID="row" value="418"/>
+          <row stringID="row" value="419">
             <item stringID="IOB_Name" value="sram1_data(7)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="427"/>
-          <row stringID="row" value="428"/>
-          <row stringID="row" value="429">
+          <row stringID="row" value="420"/>
+          <row stringID="row" value="421">
             <item stringID="IOB_Name" value="sram1_data(8)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="430"/>
-          <row stringID="row" value="431"/>
-          <row stringID="row" value="432">
+          <row stringID="row" value="422"/>
+          <row stringID="row" value="423">
             <item stringID="IOB_Name" value="sram1_data(9)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="433"/>
-          <row stringID="row" value="434"/>
-          <row stringID="row" value="435">
+          <row stringID="row" value="424"/>
+          <row stringID="row" value="425">
             <item stringID="IOB_Name" value="sram1_data(10)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="436"/>
-          <row stringID="row" value="437"/>
-          <row stringID="row" value="438">
+          <row stringID="row" value="426"/>
+          <row stringID="row" value="427">
             <item stringID="IOB_Name" value="sram1_data(11)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="439"/>
-          <row stringID="row" value="440"/>
-          <row stringID="row" value="441">
+          <row stringID="row" value="428"/>
+          <row stringID="row" value="429">
             <item stringID="IOB_Name" value="sram1_data(12)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="442"/>
-          <row stringID="row" value="443"/>
-          <row stringID="row" value="444">
+          <row stringID="row" value="430"/>
+          <row stringID="row" value="431">
             <item stringID="IOB_Name" value="sram1_data(13)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="445"/>
-          <row stringID="row" value="446"/>
-          <row stringID="row" value="447">
+          <row stringID="row" value="432"/>
+          <row stringID="row" value="433">
             <item stringID="IOB_Name" value="sram1_data(14)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="448"/>
-          <row stringID="row" value="449"/>
-          <row stringID="row" value="450">
+          <row stringID="row" value="434"/>
+          <row stringID="row" value="435">
             <item stringID="IOB_Name" value="sram1_data(15)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="451"/>
-          <row stringID="row" value="452"/>
-          <row stringID="row" value="453">
+          <row stringID="row" value="436"/>
+          <row stringID="row" value="437">
             <item stringID="IOB_Name" value="sram1_data(16)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="454"/>
-          <row stringID="row" value="455"/>
-          <row stringID="row" value="456">
+          <row stringID="row" value="438"/>
+          <row stringID="row" value="439">
             <item stringID="IOB_Name" value="sram1_data(17)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="457"/>
-          <row stringID="row" value="458"/>
-          <row stringID="row" value="459">
+          <row stringID="row" value="440"/>
+          <row stringID="row" value="441">
             <item stringID="IOB_Name" value="sram1_data(18)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="460"/>
-          <row stringID="row" value="461"/>
-          <row stringID="row" value="462">
+          <row stringID="row" value="442"/>
+          <row stringID="row" value="443">
             <item stringID="IOB_Name" value="sram1_data(19)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="463"/>
-          <row stringID="row" value="464"/>
-          <row stringID="row" value="465">
+          <row stringID="row" value="444"/>
+          <row stringID="row" value="445">
             <item stringID="IOB_Name" value="sram1_data(20)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="466"/>
-          <row stringID="row" value="467"/>
-          <row stringID="row" value="468">
+          <row stringID="row" value="446"/>
+          <row stringID="row" value="447">
             <item stringID="IOB_Name" value="sram1_data(21)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="469"/>
-          <row stringID="row" value="470"/>
-          <row stringID="row" value="471">
+          <row stringID="row" value="448"/>
+          <row stringID="row" value="449">
             <item stringID="IOB_Name" value="sram1_data(22)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="472"/>
-          <row stringID="row" value="473"/>
-          <row stringID="row" value="474">
+          <row stringID="row" value="450"/>
+          <row stringID="row" value="451">
             <item stringID="IOB_Name" value="sram1_data(23)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="475"/>
-          <row stringID="row" value="476"/>
-          <row stringID="row" value="477">
+          <row stringID="row" value="452"/>
+          <row stringID="row" value="453">
             <item stringID="IOB_Name" value="sram1_data(24)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="478"/>
-          <row stringID="row" value="479"/>
-          <row stringID="row" value="480">
+          <row stringID="row" value="454"/>
+          <row stringID="row" value="455">
             <item stringID="IOB_Name" value="sram1_data(25)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="481"/>
-          <row stringID="row" value="482"/>
-          <row stringID="row" value="483">
+          <row stringID="row" value="456"/>
+          <row stringID="row" value="457">
             <item stringID="IOB_Name" value="sram1_data(26)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="484"/>
-          <row stringID="row" value="485"/>
-          <row stringID="row" value="486">
+          <row stringID="row" value="458"/>
+          <row stringID="row" value="459">
             <item stringID="IOB_Name" value="sram1_data(27)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="487"/>
-          <row stringID="row" value="488"/>
-          <row stringID="row" value="489">
+          <row stringID="row" value="460"/>
+          <row stringID="row" value="461">
             <item stringID="IOB_Name" value="sram1_data(28)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="490"/>
-          <row stringID="row" value="491"/>
-          <row stringID="row" value="492">
+          <row stringID="row" value="462"/>
+          <row stringID="row" value="463">
             <item stringID="IOB_Name" value="sram1_data(29)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="493"/>
-          <row stringID="row" value="494"/>
-          <row stringID="row" value="495">
+          <row stringID="row" value="464"/>
+          <row stringID="row" value="465">
             <item stringID="IOB_Name" value="sram1_data(30)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="496"/>
-          <row stringID="row" value="497"/>
-          <row stringID="row" value="498">
+          <row stringID="row" value="466"/>
+          <row stringID="row" value="467">
             <item stringID="IOB_Name" value="sram1_data(31)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="499"/>
-          <row stringID="row" value="500"/>
-          <row stringID="row" value="501">
+          <row stringID="row" value="468"/>
+          <row stringID="row" value="469">
             <item stringID="IOB_Name" value="sram1_data(32)"/>
             <item stringID="TYPE" value="IOB"/>
-            <item stringID="DIRECTION" value="BIDIR"/>
+            <item stringID="DIRECTION" value="OUTPUT"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="502"/>
-          <row stringID="row" value="503"/>
-          <row stringID="row" value="504">
+          <row stringID="row" value="470"/>
+          <row stringID="row" value="471">
             <item stringID="IOB_Name" value="sram1_data(33)"/>
             <item stringID="TYPE" value="IOB"/>
-            <item stringID="DIRECTION" value="BIDIR"/>
+            <item stringID="DIRECTION" value="OUTPUT"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="505"/>
-          <row stringID="row" value="506"/>
-          <row stringID="row" value="507">
+          <row stringID="row" value="472"/>
+          <row stringID="row" value="473">
             <item stringID="IOB_Name" value="sram1_data(34)"/>
             <item stringID="TYPE" value="IOB"/>
-            <item stringID="DIRECTION" value="BIDIR"/>
+            <item stringID="DIRECTION" value="OUTPUT"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="508"/>
-          <row stringID="row" value="509"/>
-          <row stringID="row" value="510">
+          <row stringID="row" value="474"/>
+          <row stringID="row" value="475">
             <item stringID="IOB_Name" value="sram1_data(35)"/>
             <item stringID="TYPE" value="IOB"/>
-            <item stringID="DIRECTION" value="BIDIR"/>
+            <item stringID="DIRECTION" value="OUTPUT"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="511"/>
-          <row stringID="row" value="512"/>
-          <row stringID="row" value="513">
+          <row stringID="row" value="476"/>
+          <row stringID="row" value="477">
             <item stringID="IOB_Name" value="sram1_we"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2815,7 +2779,7 @@
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
           </row>
-          <row stringID="row" value="514">
+          <row stringID="row" value="478">
             <item stringID="IOB_Name" value="sram1_zz"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2823,7 +2787,7 @@
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
           </row>
-          <row stringID="row" value="515">
+          <row stringID="row" value="479">
             <item stringID="IOB_Name" value="sram2_addr(0)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2832,7 +2796,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="516">
+          <row stringID="row" value="480">
             <item stringID="IOB_Name" value="sram2_addr(1)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2841,7 +2805,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="517">
+          <row stringID="row" value="481">
             <item stringID="IOB_Name" value="sram2_addr(2)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2850,7 +2814,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="518">
+          <row stringID="row" value="482">
             <item stringID="IOB_Name" value="sram2_addr(3)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2859,7 +2823,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="519">
+          <row stringID="row" value="483">
             <item stringID="IOB_Name" value="sram2_addr(4)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2868,7 +2832,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="520">
+          <row stringID="row" value="484">
             <item stringID="IOB_Name" value="sram2_addr(5)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2877,7 +2841,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="521">
+          <row stringID="row" value="485">
             <item stringID="IOB_Name" value="sram2_addr(6)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2886,7 +2850,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="522">
+          <row stringID="row" value="486">
             <item stringID="IOB_Name" value="sram2_addr(7)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2895,7 +2859,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="523">
+          <row stringID="row" value="487">
             <item stringID="IOB_Name" value="sram2_addr(8)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2904,7 +2868,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="524">
+          <row stringID="row" value="488">
             <item stringID="IOB_Name" value="sram2_addr(9)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2913,7 +2877,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="525">
+          <row stringID="row" value="489">
             <item stringID="IOB_Name" value="sram2_addr(10)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2922,7 +2886,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="526">
+          <row stringID="row" value="490">
             <item stringID="IOB_Name" value="sram2_addr(11)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2931,7 +2895,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="527">
+          <row stringID="row" value="491">
             <item stringID="IOB_Name" value="sram2_addr(12)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2940,7 +2904,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="528">
+          <row stringID="row" value="492">
             <item stringID="IOB_Name" value="sram2_addr(13)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2949,7 +2913,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="529">
+          <row stringID="row" value="493">
             <item stringID="IOB_Name" value="sram2_addr(14)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2958,7 +2922,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="530">
+          <row stringID="row" value="494">
             <item stringID="IOB_Name" value="sram2_addr(15)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2967,7 +2931,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="531">
+          <row stringID="row" value="495">
             <item stringID="IOB_Name" value="sram2_addr(16)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2976,7 +2940,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="532">
+          <row stringID="row" value="496">
             <item stringID="IOB_Name" value="sram2_addr(17)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2985,7 +2949,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="533">
+          <row stringID="row" value="497">
             <item stringID="IOB_Name" value="sram2_addr(18)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -2994,7 +2958,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="534">
+          <row stringID="row" value="498">
             <item stringID="IOB_Name" value="sram2_addr(19)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -3002,7 +2966,7 @@
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
           </row>
-          <row stringID="row" value="535">
+          <row stringID="row" value="499">
             <item stringID="IOB_Name" value="sram2_bw(0)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -3011,7 +2975,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="536">
+          <row stringID="row" value="500">
             <item stringID="IOB_Name" value="sram2_bw(1)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -3020,7 +2984,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="537">
+          <row stringID="row" value="501">
             <item stringID="IOB_Name" value="sram2_bw(2)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -3029,7 +2993,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="538">
+          <row stringID="row" value="502">
             <item stringID="IOB_Name" value="sram2_bw(3)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -3038,403 +3002,367 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="539">
+          <row stringID="row" value="503">
             <item stringID="IOB_Name" value="sram2_data(0)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="540"/>
-          <row stringID="row" value="541"/>
-          <row stringID="row" value="542">
+          <row stringID="row" value="504"/>
+          <row stringID="row" value="505">
             <item stringID="IOB_Name" value="sram2_data(1)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="543"/>
-          <row stringID="row" value="544"/>
-          <row stringID="row" value="545">
+          <row stringID="row" value="506"/>
+          <row stringID="row" value="507">
             <item stringID="IOB_Name" value="sram2_data(2)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="546"/>
-          <row stringID="row" value="547"/>
-          <row stringID="row" value="548">
+          <row stringID="row" value="508"/>
+          <row stringID="row" value="509">
             <item stringID="IOB_Name" value="sram2_data(3)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="549"/>
-          <row stringID="row" value="550"/>
-          <row stringID="row" value="551">
+          <row stringID="row" value="510"/>
+          <row stringID="row" value="511">
             <item stringID="IOB_Name" value="sram2_data(4)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="552"/>
-          <row stringID="row" value="553"/>
-          <row stringID="row" value="554">
+          <row stringID="row" value="512"/>
+          <row stringID="row" value="513">
             <item stringID="IOB_Name" value="sram2_data(5)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="555"/>
-          <row stringID="row" value="556"/>
-          <row stringID="row" value="557">
+          <row stringID="row" value="514"/>
+          <row stringID="row" value="515">
             <item stringID="IOB_Name" value="sram2_data(6)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="558"/>
-          <row stringID="row" value="559"/>
-          <row stringID="row" value="560">
+          <row stringID="row" value="516"/>
+          <row stringID="row" value="517">
             <item stringID="IOB_Name" value="sram2_data(7)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="561"/>
-          <row stringID="row" value="562"/>
-          <row stringID="row" value="563">
+          <row stringID="row" value="518"/>
+          <row stringID="row" value="519">
             <item stringID="IOB_Name" value="sram2_data(8)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="564"/>
-          <row stringID="row" value="565"/>
-          <row stringID="row" value="566">
+          <row stringID="row" value="520"/>
+          <row stringID="row" value="521">
             <item stringID="IOB_Name" value="sram2_data(9)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="567"/>
-          <row stringID="row" value="568"/>
-          <row stringID="row" value="569">
+          <row stringID="row" value="522"/>
+          <row stringID="row" value="523">
             <item stringID="IOB_Name" value="sram2_data(10)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="570"/>
-          <row stringID="row" value="571"/>
-          <row stringID="row" value="572">
+          <row stringID="row" value="524"/>
+          <row stringID="row" value="525">
             <item stringID="IOB_Name" value="sram2_data(11)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="573"/>
-          <row stringID="row" value="574"/>
-          <row stringID="row" value="575">
+          <row stringID="row" value="526"/>
+          <row stringID="row" value="527">
             <item stringID="IOB_Name" value="sram2_data(12)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="576"/>
-          <row stringID="row" value="577"/>
-          <row stringID="row" value="578">
+          <row stringID="row" value="528"/>
+          <row stringID="row" value="529">
             <item stringID="IOB_Name" value="sram2_data(13)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="579"/>
-          <row stringID="row" value="580"/>
-          <row stringID="row" value="581">
+          <row stringID="row" value="530"/>
+          <row stringID="row" value="531">
             <item stringID="IOB_Name" value="sram2_data(14)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="582"/>
-          <row stringID="row" value="583"/>
-          <row stringID="row" value="584">
+          <row stringID="row" value="532"/>
+          <row stringID="row" value="533">
             <item stringID="IOB_Name" value="sram2_data(15)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="585"/>
-          <row stringID="row" value="586"/>
-          <row stringID="row" value="587">
+          <row stringID="row" value="534"/>
+          <row stringID="row" value="535">
             <item stringID="IOB_Name" value="sram2_data(16)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="588"/>
-          <row stringID="row" value="589"/>
-          <row stringID="row" value="590">
+          <row stringID="row" value="536"/>
+          <row stringID="row" value="537">
             <item stringID="IOB_Name" value="sram2_data(17)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="591"/>
-          <row stringID="row" value="592"/>
-          <row stringID="row" value="593">
+          <row stringID="row" value="538"/>
+          <row stringID="row" value="539">
             <item stringID="IOB_Name" value="sram2_data(18)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="594"/>
-          <row stringID="row" value="595"/>
-          <row stringID="row" value="596">
+          <row stringID="row" value="540"/>
+          <row stringID="row" value="541">
             <item stringID="IOB_Name" value="sram2_data(19)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="597"/>
-          <row stringID="row" value="598"/>
-          <row stringID="row" value="599">
+          <row stringID="row" value="542"/>
+          <row stringID="row" value="543">
             <item stringID="IOB_Name" value="sram2_data(20)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="600"/>
-          <row stringID="row" value="601"/>
-          <row stringID="row" value="602">
+          <row stringID="row" value="544"/>
+          <row stringID="row" value="545">
             <item stringID="IOB_Name" value="sram2_data(21)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="603"/>
-          <row stringID="row" value="604"/>
-          <row stringID="row" value="605">
+          <row stringID="row" value="546"/>
+          <row stringID="row" value="547">
             <item stringID="IOB_Name" value="sram2_data(22)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="606"/>
-          <row stringID="row" value="607"/>
-          <row stringID="row" value="608">
+          <row stringID="row" value="548"/>
+          <row stringID="row" value="549">
             <item stringID="IOB_Name" value="sram2_data(23)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="609"/>
-          <row stringID="row" value="610"/>
-          <row stringID="row" value="611">
+          <row stringID="row" value="550"/>
+          <row stringID="row" value="551">
             <item stringID="IOB_Name" value="sram2_data(24)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="612"/>
-          <row stringID="row" value="613"/>
-          <row stringID="row" value="614">
+          <row stringID="row" value="552"/>
+          <row stringID="row" value="553">
             <item stringID="IOB_Name" value="sram2_data(25)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="615"/>
-          <row stringID="row" value="616"/>
-          <row stringID="row" value="617">
+          <row stringID="row" value="554"/>
+          <row stringID="row" value="555">
             <item stringID="IOB_Name" value="sram2_data(26)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="618"/>
-          <row stringID="row" value="619"/>
-          <row stringID="row" value="620">
+          <row stringID="row" value="556"/>
+          <row stringID="row" value="557">
             <item stringID="IOB_Name" value="sram2_data(27)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="621"/>
-          <row stringID="row" value="622"/>
-          <row stringID="row" value="623">
+          <row stringID="row" value="558"/>
+          <row stringID="row" value="559">
             <item stringID="IOB_Name" value="sram2_data(28)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="624"/>
-          <row stringID="row" value="625"/>
-          <row stringID="row" value="626">
+          <row stringID="row" value="560"/>
+          <row stringID="row" value="561">
             <item stringID="IOB_Name" value="sram2_data(29)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="627"/>
-          <row stringID="row" value="628"/>
-          <row stringID="row" value="629">
+          <row stringID="row" value="562"/>
+          <row stringID="row" value="563">
             <item stringID="IOB_Name" value="sram2_data(30)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="630"/>
-          <row stringID="row" value="631"/>
-          <row stringID="row" value="632">
+          <row stringID="row" value="564"/>
+          <row stringID="row" value="565">
             <item stringID="IOB_Name" value="sram2_data(31)"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="BIDIR"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="633"/>
-          <row stringID="row" value="634"/>
-          <row stringID="row" value="635">
+          <row stringID="row" value="566"/>
+          <row stringID="row" value="567">
             <item stringID="IOB_Name" value="sram2_data(32)"/>
             <item stringID="TYPE" value="IOB"/>
-            <item stringID="DIRECTION" value="BIDIR"/>
+            <item stringID="DIRECTION" value="OUTPUT"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="636"/>
-          <row stringID="row" value="637"/>
-          <row stringID="row" value="638">
+          <row stringID="row" value="568"/>
+          <row stringID="row" value="569">
             <item stringID="IOB_Name" value="sram2_data(33)"/>
             <item stringID="TYPE" value="IOB"/>
-            <item stringID="DIRECTION" value="BIDIR"/>
+            <item stringID="DIRECTION" value="OUTPUT"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="639"/>
-          <row stringID="row" value="640"/>
-          <row stringID="row" value="641">
+          <row stringID="row" value="570"/>
+          <row stringID="row" value="571">
             <item stringID="IOB_Name" value="sram2_data(34)"/>
             <item stringID="TYPE" value="IOB"/>
-            <item stringID="DIRECTION" value="BIDIR"/>
+            <item stringID="DIRECTION" value="OUTPUT"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="642"/>
-          <row stringID="row" value="643"/>
-          <row stringID="row" value="644">
+          <row stringID="row" value="572"/>
+          <row stringID="row" value="573">
             <item stringID="IOB_Name" value="sram2_data(35)"/>
             <item stringID="TYPE" value="IOB"/>
-            <item stringID="DIRECTION" value="BIDIR"/>
+            <item stringID="DIRECTION" value="OUTPUT"/>
             <item stringID="IO_STANDARD" value="LVCMOS25"/>
             <item stringID="DRIVE_STRENGTH" value="12"/>
             <item stringID="SLEW_RATE" value="SLOW"/>
-            <item stringID="REGS" value="INFF1 OFF1 ENFF1"/>
+            <item stringID="REGS" value="OFF1 ENFF1"/>
           </row>
-          <row stringID="row" value="645"/>
-          <row stringID="row" value="646"/>
-          <row stringID="row" value="647">
+          <row stringID="row" value="574"/>
+          <row stringID="row" value="575">
             <item stringID="IOB_Name" value="sram2_we"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -3443,7 +3371,7 @@
             <item stringID="SLEW_RATE" value="SLOW"/>
             <item stringID="REGS" value="OFF1"/>
           </row>
-          <row stringID="row" value="648">
+          <row stringID="row" value="576">
             <item stringID="IOB_Name" value="sram2_zz"/>
             <item stringID="TYPE" value="IOB"/>
             <item stringID="DIRECTION" value="OUTPUT"/>
@@ -3455,7 +3383,7 @@
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="1368"/>
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="1370"/>
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>

@@ -1,10 +1,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
 // Module: registers.v
-// Project: MINIFIREWALL (miniteste)
+// Project: MINIFIREWALL2 (minicurso2)
 // Description: Project specific register defines
 //
-//              Firewall to parser packets based in TCP port rules
+//              Firewall to parser packets based in TCP port using register interface
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -16,9 +16,9 @@
 `define DEVICE_MAJOR       1
 `define DEVICE_MINOR       1
 `define DEVICE_REVISION    2
-`define DEVICE_PROJ_DIR    "miniteste"
-`define DEVICE_PROJ_NAME   "MINIFIREWALL"
-`define DEVICE_PROJ_DESC   "Firewall to parser packets based in TCP port rules"
+`define DEVICE_PROJ_DIR    "minicurso2"
+`define DEVICE_PROJ_NAME   "MINIFIREWALL2"
+`define DEVICE_PROJ_DESC   "Firewall to parser packets based in TCP port using register interface"
 
 
 // -------------------------------------
@@ -204,47 +204,50 @@
 // -------------------------------------
 
 // Tag/address widths
-`define BRAM_OQ_BLOCK_ADDR_WIDTH    17
-`define BRAM_OQ_REG_ADDR_WIDTH      6
-`define CORE_BLOCK_ADDR_WIDTH       1
-`define CORE_REG_ADDR_WIDTH         22
-`define CPU_QUEUE_BLOCK_ADDR_WIDTH  4
-`define CPU_QUEUE_REG_ADDR_WIDTH    16
-`define DEV_ID_BLOCK_ADDR_WIDTH     4
-`define DEV_ID_REG_ADDR_WIDTH       16
-`define DMA_BLOCK_ADDR_WIDTH        4
-`define DMA_REG_ADDR_WIDTH          16
-`define DRAM_BLOCK_ADDR_WIDTH       1
-`define DRAM_REG_ADDR_WIDTH         24
-`define IN_ARB_BLOCK_ADDR_WIDTH     17
-`define IN_ARB_REG_ADDR_WIDTH       6
-`define MAC_GRP_BLOCK_ADDR_WIDTH    4
-`define MAC_GRP_REG_ADDR_WIDTH      16
-`define MDIO_BLOCK_ADDR_WIDTH       4
-`define MDIO_REG_ADDR_WIDTH         16
-`define SRAM_BLOCK_ADDR_WIDTH       1
-`define SRAM_REG_ADDR_WIDTH         22
-`define UDP_BLOCK_ADDR_WIDTH        1
-`define UDP_REG_ADDR_WIDTH          23
+`define BRAM_OQ_BLOCK_ADDR_WIDTH       17
+`define BRAM_OQ_REG_ADDR_WIDTH         6
+`define CORE_BLOCK_ADDR_WIDTH          1
+`define CORE_REG_ADDR_WIDTH            22
+`define CPU_QUEUE_BLOCK_ADDR_WIDTH     4
+`define CPU_QUEUE_REG_ADDR_WIDTH       16
+`define DEV_ID_BLOCK_ADDR_WIDTH        4
+`define DEV_ID_REG_ADDR_WIDTH          16
+`define DMA_BLOCK_ADDR_WIDTH           4
+`define DMA_REG_ADDR_WIDTH             16
+`define DRAM_BLOCK_ADDR_WIDTH          1
+`define DRAM_REG_ADDR_WIDTH            24
+`define IN_ARB_BLOCK_ADDR_WIDTH        17
+`define IN_ARB_REG_ADDR_WIDTH          6
+`define MAC_GRP_BLOCK_ADDR_WIDTH       4
+`define MAC_GRP_REG_ADDR_WIDTH         16
+`define MDIO_BLOCK_ADDR_WIDTH          4
+`define MDIO_REG_ADDR_WIDTH            16
+`define MINIFIREWALL_BLOCK_ADDR_WIDTH  19
+`define MINIFIREWALL_REG_ADDR_WIDTH    4
+`define SRAM_BLOCK_ADDR_WIDTH          1
+`define SRAM_REG_ADDR_WIDTH            22
+`define UDP_BLOCK_ADDR_WIDTH           1
+`define UDP_REG_ADDR_WIDTH             23
 
 // Module tags
-`define CORE_BLOCK_ADDR         1'h0
-`define DEV_ID_BLOCK_ADDR       4'h0
-`define MDIO_BLOCK_ADDR         4'h1
-`define DMA_BLOCK_ADDR          4'h4
-`define MAC_GRP_0_BLOCK_ADDR    4'h8
-`define MAC_GRP_1_BLOCK_ADDR    4'h9
-`define MAC_GRP_2_BLOCK_ADDR    4'ha
-`define MAC_GRP_3_BLOCK_ADDR    4'hb
-`define CPU_QUEUE_0_BLOCK_ADDR  4'hc
-`define CPU_QUEUE_1_BLOCK_ADDR  4'hd
-`define CPU_QUEUE_2_BLOCK_ADDR  4'he
-`define CPU_QUEUE_3_BLOCK_ADDR  4'hf
-`define SRAM_BLOCK_ADDR         1'h1
-`define UDP_BLOCK_ADDR          1'h1
-`define IN_ARB_BLOCK_ADDR       17'h00000
-`define BRAM_OQ_BLOCK_ADDR      17'h00001
-`define DRAM_BLOCK_ADDR         1'h1
+`define CORE_BLOCK_ADDR          1'h0
+`define DEV_ID_BLOCK_ADDR        4'h0
+`define MDIO_BLOCK_ADDR          4'h1
+`define DMA_BLOCK_ADDR           4'h4
+`define MAC_GRP_0_BLOCK_ADDR     4'h8
+`define MAC_GRP_1_BLOCK_ADDR     4'h9
+`define MAC_GRP_2_BLOCK_ADDR     4'ha
+`define MAC_GRP_3_BLOCK_ADDR     4'hb
+`define CPU_QUEUE_0_BLOCK_ADDR   4'hc
+`define CPU_QUEUE_1_BLOCK_ADDR   4'hd
+`define CPU_QUEUE_2_BLOCK_ADDR   4'he
+`define CPU_QUEUE_3_BLOCK_ADDR   4'hf
+`define SRAM_BLOCK_ADDR          1'h1
+`define UDP_BLOCK_ADDR           1'h1
+`define MINIFIREWALL_BLOCK_ADDR  19'h00000
+`define IN_ARB_BLOCK_ADDR        17'h00001
+`define BRAM_OQ_BLOCK_ADDR       17'h00002
+`define DRAM_BLOCK_ADDR          1'h1
 
 
 // -------------------------------------
@@ -441,6 +444,14 @@
 `define MDIO_PHY_TEST                                    5'h1e
 `define MDIO_PHY_RESERVED                                5'h1f
 
+
+// Name: minifirewall
+// Description: Registers for minifirewall
+// File: projects/minicurso2/include/minifirewall.xml
+`define MINIFIREWALL_DPORT1  4'h0
+`define MINIFIREWALL_DPORT2  4'h1
+`define MINIFIREWALL_DPORT3  4'h2
+`define MINIFIREWALL_DPORT4  4'h3
 
 // Name: nf2_mac_grp
 // Description: Ethernet MAC group

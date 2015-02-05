@@ -936,9 +936,9 @@ module nf2_core #(
       .MAJOR      (1),
       .MINOR      (1),
       .REVISION   (2),
-      .PROJ_DIR   ("miniteste"),
-      .PROJ_NAME  ("MINIFIREWALL"),
-      .PROJ_DESC  ("Firewall to parser packets based in TCP port rules")
+      .PROJ_DIR   ("minicurso2"),
+      .PROJ_NAME  ("MINIFIREWALL2"),
+      .PROJ_DESC  ("Firewall to parser packets based in TCP port using register interface")
    )
 `endif
    device_id_reg (

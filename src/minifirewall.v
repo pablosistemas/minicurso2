@@ -69,11 +69,8 @@ module minifirewall
    localparam                    WORD3_CHECK_TCP =3;
    localparam                    WORD4_IP_ADDR =4;
    localparam                    WORD5_TCP_PORT =5;
-   localparam                    CONSULTA_REGRAS = 6;
-   localparam                    VERIFICA_PORTA = 7;
-   localparam                    PAYLOAD =8;
-   localparam                    CONSULTA_FALSO = 9;
-   localparam                    ENVIA_WORDS_1_4 = 10;
+   localparam                    PAYLOAD =6;
+   localparam                    ENVIA_WORDS_1_4 = 7;
 
    localparam ICMP        = 'h01;
    localparam TCP        = 'h06;
@@ -98,6 +95,7 @@ module minifirewall
 
    reg [15:0]                    dst_port, dst_port_next;
    reg [15:0]                    src_port, src_port_next;
+   wire [31:0]                   dport1, dport2, dport3, dport4;
    reg                           drop, drop_next;
 
    reg [CTRL_WIDTH+DATA_WIDTH-1:0]   word1,word2,word3,word4;
@@ -132,10 +130,9 @@ module minifirewall
    #(
       .UDP_REG_SRC_WIDTH   (UDP_REG_SRC_WIDTH),
       .TAG                 (0),                 // Tag -- eg. MODULE_TAG
-      .REG_ADDR_WIDTH      (1),                 // Width of block addresses -- eg. MODULE_REG_ADDR_WIDTH
+      .REG_ADDR_WIDTH      (`MINIFIREWALL_REG_ADDR_WIDTH),                 // Width of block addresses -- eg. MODULE_REG_ADDR_WIDTH
       .NUM_COUNTERS        (0),                 // Number of counters
-      .NUM_SOFTWARE_REGS   (0),                 // Number of sw regs
-      //.NUM_SOFTWARE_REGS   (0),                 // Number of sw regs
+      .NUM_SOFTWARE_REGS   (4),                 // Number of sw regs
       .NUM_HARDWARE_REGS   (0)                  // Number of hw regs
    ) module_regs (
       .reg_req_in       (reg_req_in),
@@ -157,8 +154,7 @@ module minifirewall
       .counter_decrement(),
 
       // --- SW regs interface
-      //.software_regs    ({endereco19_porta13}),
-      .software_regs    (),
+      .software_regs    ({dport1,dport2,dport3,dport4}),
 
       // --- HW regs interface
       .hardware_regs    (),
@@ -285,65 +281,27 @@ module minifirewall
             state_next = WORD4_IP_ADDR;
       end
       WORD5_TCP_PORT: begin
-         $display("WORD5\n");
+         $display("WORD5: %x, %x, %x, %x\n",dport1,dport2,dport3,dport4);
          $display("PORTA: %d, %d\n",in_fifo_data[47:32],in_fifo_data[31:16]);
          if (!in_fifo_empty && out_rdy) begin
-            //out_wr = 1;
-            //in_fifo_rd_en = 1;
             dst_port_next = in_fifo_data[31:16];
             src_port_next = in_fifo_data[47:32];
-            //state_next = PAYLOAD;
-            state_next = CONSULTA_REGRAS;
-            //synthesis translate_off
-            //state_next = CONSULTA_FALSO;
-            //synthesis translate_on
-         end
-         else
-            state_next = WORD5_TCP_PORT;
-      end
-      CONSULTA_FALSO: begin
-         $display("CONSULTA_FALSO. DSTPORT: %d, SRCPORT: %d\n",dst_port,src_port);
-         /*if((dst_port >=80 && dst_port < 95) || 
-               (dst_port >=1010 && dst_port < 1025)) begin*/
-         //between 1010 and 1060 there are 50 pkts that will be dropped
-         if (dst_port >= 1010 && dst_port < 1060) begin
-            drop_next = 1;
-            state_next = PAYLOAD;
-            $display("REJECTED\n");
-         end
-         else begin
-            drop_next = 0;
-            state_next = ENVIA_WORDS_1_4;
-            $display("ACCEPTED\n");
-         end
-      end
-      CONSULTA_REGRAS: begin
-         $display("CONSULTA REGRAS\n");
-         rd_0_req_next = 1;
-         rd_0_addr_next = 'h0;
-         state_next = VERIFICA_PORTA;
-      end
-      VERIFICA_PORTA: begin
-         $display("VERIFICA PORTA\n");
-         //if (rd_0_ack) begin
-         if (rd_0_vld) begin
-            $display("dataread: %h\n",rd_0_data);
-            if(rd_0_data[17:0] == dst_port) begin
+            if(in_fifo_data[31:16] == dport1[15:0]) begin
                $display("REJECTED1\n");
                drop_next = 1;
                state_next = PAYLOAD;
             end
-            else if(rd_0_data[35:18] == dst_port) begin
+            else if(in_fifo_data[31:16] == dport2[15:0]) begin
                $display("REJECTED2\n");
                drop_next = 1;
                state_next = PAYLOAD;
             end
-            else if(rd_0_data[53:36] == dst_port) begin
+            else if(in_fifo_data[31:16] == dport3[15:0]) begin
                $display("REJECTED3\n");
                drop_next = 1;
                state_next = PAYLOAD;
             end
-            else if(rd_0_data[71:54] == dst_port) begin
+            else if(in_fifo_data[31:16] == dport4[15:0]) begin
                $display("REJECTED4\n");
                drop_next = 1;
                state_next = PAYLOAD;
@@ -355,7 +313,7 @@ module minifirewall
             end
          end
          else
-            state_next = VERIFICA_PORTA;
+            state_next = WORD5_TCP_PORT;
       end
       ENVIA_WORDS_1_4: begin
          $display("ENVIA_WORDS_1_4: %h\n", word_saved);

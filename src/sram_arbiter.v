@@ -206,6 +206,7 @@ module sram_arbiter  #(parameter SRAM_ADDR_WIDTH = 19,
          //first pipeline stage
             sram_reg_addr_is_high <= sram_reg_addr[0];
             if(sram_reg_req) begin
+               $display("SRAM_BASE\n");
                sram_addr1 <= sram_reg_addr[19:1];
                sram_addr2 <= sram_reg_addr[19:1];
                //sram_wr_data_early2 <= sram_reg_addr[0] ? {12'h0,sram_reg_wr_data,36'h0}:{48'h0,sram_reg_wr_data};
